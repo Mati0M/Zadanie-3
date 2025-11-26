@@ -1,6 +1,10 @@
 #include "gtest/gtest.h"
 #include "MergeSort.h"
 
+#include <vector>
+#include <algorithm>
+#include <random>
+
 /*
     Test: Sortowanie tablicy już posortowanej.
     Algorytm nie powinien zmienić kolejności.
@@ -151,12 +155,14 @@ TEST(MergeSortTests, LargeArrayMixed100)
     for (int i = -50; i <= 50; ++i) arr.push_back(i);
     for (int i = -50; i <= 50; ++i) arr.push_back(i);
 
-    std::random_shuffle(arr.begin(), arr.end());
+    // Losowo wymieszaj tablicę – C++17 kompatybilne
+    std::shuffle(arr.begin(), arr.end(),
+                 std::mt19937(std::random_device{}()));
 
     MergeSort<int> ms;
     ms.sort(arr);
 
-    // Wartości posortowane oczekiwane
+    // Oczekiwany wynik
     std::vector<int> expected;
     for (int i = -50; i <= 50; ++i) expected.push_back(i);
     for (int i = -50; i <= 50; ++i) expected.push_back(i);

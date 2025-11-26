@@ -1,0 +1,15 @@
+# ninja log v6
+20	750	7858808393230784	CMakeFiles/merge_sort_app.dir/src/main.cpp.obj	78d0eb3bf2f95abe
+752	1064	7858808400557079	merge_sort_app.exe	617fdceb32a88421
+15	1170	7858808393180746	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	98540a568db2f97f
+47	1365	7858808393506023	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	53f448bad86cad01
+42	1792	7858808393455977	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	4b69fe4ba77ad0cc
+32	1825	7858808393355890	googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	1da9df2dd6011c04
+37	2545	7858808393410945	googletest/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	e5fd053e3aeef736
+26	2552	7858808393300843	googletest/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	98f1850e6f71f729
+9	2600	7858808393125697	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	4067f8f3515daa90
+28	107	7858817075702102	lib/gtest.lib	d9cd3debc5ae41e2
+38	150	7858817075807186	lib/gmock.lib	a9bcabe3e9de1954
+44	152	7858817075862234	lib/gmock_main.lib	9e89d64cde2f1867
+107	152	7858817076492803	lib/gtest_main.lib	48cf5aaf8e072f6b
+34	1236	7858817075767156	CMakeFiles/merge_sort_tests.dir/testy/MergeSortTests.cpp.obj	1ae4670994de86e5

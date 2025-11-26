@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/marci/Desktop/Programowanie/Rok 2/Zadanie 3/build/cmake_install.cmake",
+		"C:/Users/marci/Desktop/Programowanie/Rok 2/Zadanie 3/build/googletest/cmake_install.cmake",
+		"C:/Users/marci/Desktop/Programowanie/Rok 2/Zadanie 3/build/googletest/googlemock/cmake_install.cmake",
+		"C:/Users/marci/Desktop/Programowanie/Rok 2/Zadanie 3/build/googletest/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

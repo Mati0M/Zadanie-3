@@ -21,7 +21,7 @@ include_directories(
 )
 
 add_executable(merge_sort_tests
-    tests/MergeSortTests.cpp
+    testy/MergeSortTests.cpp
 )
 
 target_link_libraries(merge_sort_tests
