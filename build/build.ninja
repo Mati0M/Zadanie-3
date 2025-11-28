@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_merge_sort_app: phony || .
 build CMakeFiles\merge_sort_app.dir\src\main.cpp.obj: CXX_COMPILER__merge_sort_app_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\src\main.cpp || cmake_object_order_depends_target_merge_sort_app
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy"
   OBJECT_DIR = CMakeFiles\merge_sort_app.dir
   OBJECT_FILE_DIR = CMakeFiles\merge_sort_app.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\merge_sort_app.dir\
@@ -91,7 +91,7 @@ build cmake_object_order_depends_target_merge_sort_tests: phony || cmake_object_
 build CMakeFiles\merge_sort_tests.dir\testy\MergeSortTests.cpp.obj: CXX_COMPILER__merge_sort_tests_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\testy\MergeSortTests.cpp || cmake_object_order_depends_target_merge_sort_tests
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest" -external:W0
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest" -external:W0
   OBJECT_DIR = CMakeFiles\merge_sort_tests.dir
   OBJECT_FILE_DIR = CMakeFiles\merge_sort_tests.dir\testy
   TARGET_COMPILE_PDB = CMakeFiles\merge_sort_tests.dir\
@@ -246,7 +246,7 @@ build cmake_object_order_depends_target_gmock: phony || .
 build googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src
   TARGET_COMPILE_PDB = lib\gmockpdb_debug_postfix-NOTFOUND.pdb
@@ -255,7 +255,7 @@ build googletest\googlemock\CMakeFiles\gmock.dir\__\googletest\src\gtest-all.cc.
 build googletest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock.dir\src
   TARGET_COMPILE_PDB = lib\gmockpdb_debug_postfix-NOTFOUND.pdb
@@ -292,7 +292,7 @@ build cmake_object_order_depends_target_gmock_main: phony || .
 build googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gmock_main
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src
   TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
@@ -301,7 +301,7 @@ build googletest\googlemock\CMakeFiles\gmock_main.dir\__\googletest\src\gtest-al
 build googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googlemock\src\gmock-all.cc || cmake_object_order_depends_target_gmock_main
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir\src
   TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
@@ -310,7 +310,7 @@ build googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock-all.cc.obj: CXX_
 build googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googlemock\src\gmock_main.cc || cmake_object_order_depends_target_gmock_main
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googlemock" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir\src
   TARGET_COMPILE_PDB = lib\gmock_mainpdb_debug_postfix-NOTFOUND.pdb
@@ -405,7 +405,7 @@ build cmake_object_order_depends_target_gtest: phony || .
 build googletest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googletest\src\gtest-all.cc || cmake_object_order_depends_target_gtest
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest"
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = googletest\googletest\CMakeFiles\gtest.dir\src
   TARGET_COMPILE_PDB = lib\gtestpdb_debug_postfix-NOTFOUND.pdb
@@ -442,7 +442,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 build googletest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:\Users\marci\Desktop\Programowanie\Rok$ 2\Zadanie$ 3\googletest\googletest\src\gtest_main.cc || cmake_object_order_depends_target_gtest_main
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W4 /GR  -MTd /Zi /Ob0 /Od /RTC1 -std:c++17 -GS -W4 -WX -wd4251 -wd4275 -nologo -J -D_UNICODE -DUNICODE -DWIN32 -D_WIN32 -DSTRICT -DWIN32_LEAN_AND_MEAN -wd4702 -utf-8 -DGTEST_HAS_PTHREAD=0 -EHsc -D_HAS_EXCEPTIONS=1
-  INCLUDES = -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest" -external:W0
+  INCLUDES = -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\src" -I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\testy" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest\include" -external:I"C:\Users\marci\Desktop\Programowanie\Rok 2\Zadanie 3\googletest\googletest" -external:W0
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = googletest\googletest\CMakeFiles\gtest_main.dir\src
   TARGET_COMPILE_PDB = lib\gtest_mainpdb_debug_postfix-NOTFOUND.pdb

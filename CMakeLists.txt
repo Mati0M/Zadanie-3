@@ -3,28 +3,28 @@ project(MergeSortProject)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# ========================
-# Dodanie źródeł programu
-# ========================
-add_executable(merge_sort_app
-    src/main.cpp
-)
+# Wymuś dynamiczny runtime /MDd dla MSVC
+if(MSVC)
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDebugDLL")
+endif()
 
-# ========================
-# Dodanie testów GoogleTest
-# ========================
+# Foldery
+include_directories(src)
+include_directories(testy)
+
+# GoogleTest
 add_subdirectory(googletest)
 
-include_directories(
-    googletest/googletest/include
-    src
+# Aplikacja
+add_executable(merge_sort_app
+    src/main.cpp
+    src/MergeSort.h
 )
 
+# Testy – MUSI być dodany MergeSort.h
 add_executable(merge_sort_tests
     testy/MergeSortTests.cpp
+    src/MergeSort.h
 )
 
-target_link_libraries(merge_sort_tests
-    gtest
-    gtest_main
-)
+target_link_libraries(merge_sort_tests gtest gtest_main)

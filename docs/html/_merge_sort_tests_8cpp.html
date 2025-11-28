@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MergeSort + GoogleTest: Dokumentacja pliku MergeSortTests.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">MergeSort + GoogleTest
+   </div>
+   <div id="projectbrief">Implementacja szablonowego sortowania przez scalanie z testami jednostkowymi GoogleTest.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_merge_sort_tests_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja pliku MergeSortTests.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_merge_sort_8h_source.html">MergeSort.h</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;random&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a301581524c19038d80353550d6c08797" id="r_a301581524c19038d80353550d6c08797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301581524c19038d80353550d6c08797">TEST</a> (MergeSortTests, AlreadySorted)</td></tr>
+<tr class="memitem:affe4053cd74e8bd1ff3f25af902e94ee" id="r_affe4053cd74e8bd1ff3f25af902e94ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affe4053cd74e8bd1ff3f25af902e94ee">TEST</a> (MergeSortTests, ReverseSorted)</td></tr>
+<tr class="memitem:a396e6830af8f0b500885796f67991cb4" id="r_a396e6830af8f0b500885796f67991cb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a396e6830af8f0b500885796f67991cb4">TEST</a> (MergeSortTests, RandomNumbers)</td></tr>
+<tr class="memitem:ad1a637023bfd7c9bc791f34763216637" id="r_ad1a637023bfd7c9bc791f34763216637"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1a637023bfd7c9bc791f34763216637">TEST</a> (MergeSortTests, OnlyNegativeNumbers)</td></tr>
+<tr class="memitem:a0da569edb9fa8bf75d8594edd36c53b5" id="r_a0da569edb9fa8bf75d8594edd36c53b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da569edb9fa8bf75d8594edd36c53b5">TEST</a> (MergeSortTests, NegativeAndPositive)</td></tr>
+<tr class="memitem:a087bd2fb35f6d6ff4627bed20334dee6" id="r_a087bd2fb35f6d6ff4627bed20334dee6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a087bd2fb35f6d6ff4627bed20334dee6">TEST</a> (MergeSortTests, EmptyArray)</td></tr>
+<tr class="memitem:af13b740694dbe9b8887fa405338b4951" id="r_af13b740694dbe9b8887fa405338b4951"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af13b740694dbe9b8887fa405338b4951">TEST</a> (MergeSortTests, SingleElement)</td></tr>
+<tr class="memitem:aed12607b3d17420f9831d896c02e6fe8" id="r_aed12607b3d17420f9831d896c02e6fe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed12607b3d17420f9831d896c02e6fe8">TEST</a> (MergeSortTests, Duplicates)</td></tr>
+<tr class="memitem:a18d99bd30f7632637239ac1eaab8939d" id="r_a18d99bd30f7632637239ac1eaab8939d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d99bd30f7632637239ac1eaab8939d">TEST</a> (MergeSortTests, NegativeWithDuplicates)</td></tr>
+<tr class="memitem:a1d6a0a823c75efc7fd1cad54b7f218e8" id="r_a1d6a0a823c75efc7fd1cad54b7f218e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d6a0a823c75efc7fd1cad54b7f218e8">TEST</a> (MergeSortTests, MixedValuesWithDuplicates)</td></tr>
+<tr class="memitem:ac8f0238362621ee3df411c205dbb05b1" id="r_ac8f0238362621ee3df411c205dbb05b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f0238362621ee3df411c205dbb05b1">TEST</a> (MergeSortTests, TwoElementsSorted)</td></tr>
+<tr class="memitem:a1c8a1b5807fa020febb476f316214b14" id="r_a1c8a1b5807fa020febb476f316214b14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c8a1b5807fa020febb476f316214b14">TEST</a> (MergeSortTests, LargeArray100)</td></tr>
+<tr class="memitem:a4ed2651191b4b829d64ec9acad29d3fa" id="r_a4ed2651191b4b829d64ec9acad29d3fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed2651191b4b829d64ec9acad29d3fa">TEST</a> (MergeSortTests, LargeArrayMixed100)</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji</h2>
+<a id="a301581524c19038d80353550d6c08797" name="a301581524c19038d80353550d6c08797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a301581524c19038d80353550d6c08797">&#9670;&#160;</a></span>TEST() <span class="overload">[1/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AlreadySorted</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed12607b3d17420f9831d896c02e6fe8" name="aed12607b3d17420f9831d896c02e6fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed12607b3d17420f9831d896c02e6fe8">&#9670;&#160;</a></span>TEST() <span class="overload">[2/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Duplicates</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a087bd2fb35f6d6ff4627bed20334dee6" name="a087bd2fb35f6d6ff4627bed20334dee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087bd2fb35f6d6ff4627bed20334dee6">&#9670;&#160;</a></span>TEST() <span class="overload">[3/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EmptyArray</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c8a1b5807fa020febb476f316214b14" name="a1c8a1b5807fa020febb476f316214b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8a1b5807fa020febb476f316214b14">&#9670;&#160;</a></span>TEST() <span class="overload">[4/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LargeArray100</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ed2651191b4b829d64ec9acad29d3fa" name="a4ed2651191b4b829d64ec9acad29d3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed2651191b4b829d64ec9acad29d3fa">&#9670;&#160;</a></span>TEST() <span class="overload">[5/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LargeArrayMixed100</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d6a0a823c75efc7fd1cad54b7f218e8" name="a1d6a0a823c75efc7fd1cad54b7f218e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6a0a823c75efc7fd1cad54b7f218e8">&#9670;&#160;</a></span>TEST() <span class="overload">[6/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MixedValuesWithDuplicates</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0da569edb9fa8bf75d8594edd36c53b5" name="a0da569edb9fa8bf75d8594edd36c53b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da569edb9fa8bf75d8594edd36c53b5">&#9670;&#160;</a></span>TEST() <span class="overload">[7/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NegativeAndPositive</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18d99bd30f7632637239ac1eaab8939d" name="a18d99bd30f7632637239ac1eaab8939d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d99bd30f7632637239ac1eaab8939d">&#9670;&#160;</a></span>TEST() <span class="overload">[8/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NegativeWithDuplicates</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1a637023bfd7c9bc791f34763216637" name="ad1a637023bfd7c9bc791f34763216637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a637023bfd7c9bc791f34763216637">&#9670;&#160;</a></span>TEST() <span class="overload">[9/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OnlyNegativeNumbers</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a396e6830af8f0b500885796f67991cb4" name="a396e6830af8f0b500885796f67991cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396e6830af8f0b500885796f67991cb4">&#9670;&#160;</a></span>TEST() <span class="overload">[10/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomNumbers</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affe4053cd74e8bd1ff3f25af902e94ee" name="affe4053cd74e8bd1ff3f25af902e94ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affe4053cd74e8bd1ff3f25af902e94ee">&#9670;&#160;</a></span>TEST() <span class="overload">[11/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReverseSorted</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af13b740694dbe9b8887fa405338b4951" name="af13b740694dbe9b8887fa405338b4951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13b740694dbe9b8887fa405338b4951">&#9670;&#160;</a></span>TEST() <span class="overload">[12/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SingleElement</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8f0238362621ee3df411c205dbb05b1" name="ac8f0238362621ee3df411c205dbb05b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f0238362621ee3df411c205dbb05b1">&#9670;&#160;</a></span>TEST() <span class="overload">[13/13]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">MergeSortTests</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TwoElementsSorted</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_e0843914df69aa332a9e130846013c7e.html">testy</a></li><li class="navelem"><a href="_merge_sort_tests_8cpp.html">MergeSortTests.cpp</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+#---------------------------------------------------------
+#  Podstawowe ustawienia projektu
+#---------------------------------------------------------
+
+# Nazwa projektu (pojawi się na stronie tytułowej i w nagłówkach)
+PROJECT_NAME           = "MergeSort + GoogleTest"
+
+# Krótkie info o projekcie
+PROJECT_BRIEF          = "Implementacja szablonowego sortowania przez scalanie z testami jednostkowymi GoogleTest."
+
+# Katalog wyjściowy (w nim powstaną html/ i latex/)
+OUTPUT_DIRECTORY       = docs
+
+# Kodowanie
+OUTPUT_LANGUAGE        = Polish
+DOCSET_PUBLISHER_NAME  = "MergeSortDoc"
+
+#---------------------------------------------------------
+#  Wejściowe pliki z kodem
+#---------------------------------------------------------
+
+# Katalogi, które Doxygen ma przeglądać
+INPUT                  = src testy
+
+# Czy przeszukiwać podkatalogi
+RECURSIVE              = YES
+
+# Jakie rozszerzenia plików ma brać pod uwagę
+FILE_PATTERNS          = *.h \
+                         *.hpp \
+                         *.cpp
+
+# Wykluczamy googletest, żeby nie generować dokumentacji do jego źródeł
+EXCLUDE                = googletest
+
+#---------------------------------------------------------
+#  Styl generowania dokumentacji
+#---------------------------------------------------------
+
+# Jeżeli nie wszystkie elementy są udokumentowane, a chcesz, 
+# żeby i tak się pojawiły, ustaw YES
+EXTRACT_ALL            = YES
+
+# Pokazuj prywatne składowe klas (jak nie chcesz, daj NO)
+EXTRACT_PRIVATE        = NO
+
+# Komentarze w stylu C++ (///, /** */) traktuj jako dokumentację
+JAVADOC_AUTOBRIEF      = YES
+QT_AUTOBRIEF           = YES
+
+#---------------------------------------------------------
+#  Wyjście HTML
+#---------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_DYNAMIC_SECTIONS  = YES
+
+#---------------------------------------------------------
+#  Wyjście LaTeX (do PDF)
+#---------------------------------------------------------
+
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+USE_PDFLATEX           = YES
+LATEX_BATCHMODE        = NO
+
+# Jeśli masz zainstalowanego GraphViza (dot), włącz ładne grafy
+HAVE_DOT               = NO
+
+#---------------------------------------------------------
+#  Wygląd / szczegóły
+#---------------------------------------------------------
+
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = "src"
+
+# Pokazuj drzewko klas
+CLASS_DIAGRAMS         = YES
+
+# Ustawienia dla C++
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
